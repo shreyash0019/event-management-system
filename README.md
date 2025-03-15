@@ -26,6 +26,9 @@ The database operations are defined in `operations.sql` and include:
 - Querying all events
 - Fetching attendees for a specific event
 - Fetching the schedule for a specific event
+- Fetching the total number of attendees for each event
+- Fetching the total revenue for each event (assuming ticket price is $50)
+- Fetching events happening at a specific venue
 - Updating an attendee's email
 - Deleting a specific ticket
 
@@ -46,7 +49,7 @@ The database operations are defined in `operations.sql` and include:
 
 ## Usage
 
-You can use the provided SQL files to set up and manipulate an event management system database. The operations file contains examples of common database operations.
+You can use the provided SQL files to set up and manipulate an event management system database. The operations file contains examples of common and advanced database operations.
 
 ## License
 

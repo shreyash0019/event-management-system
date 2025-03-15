@@ -12,6 +12,23 @@ SELECT s.start_time, s.end_time, s.activity
 FROM schedules s
 WHERE s.event_id = 1;
 
+-- Query to fetch the total number of attendees for each event
+SELECT e.name AS event_name, COUNT(t.ticket_id) AS total_attendees
+FROM events e
+JOIN tickets t ON e.event_id = t.event_id
+GROUP BY e.name;
+
+-- Query to fetch the total revenue for each event (assuming ticket price is $50)
+SELECT e.name AS event_name, COUNT(t.ticket_id) * 50 AS total_revenue
+FROM events e
+JOIN tickets t ON e.event_id = t.event_id
+GROUP BY e.name;
+
+-- Query to fetch events happening at a specific venue
+SELECT e.name, e.date
+FROM events e
+WHERE e.venue_id = 2;
+
 -- Update an attendee's email
 UPDATE attendees
 SET email = 'new.email@example.com'

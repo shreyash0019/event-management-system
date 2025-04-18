@@ -50,7 +50,3 @@ The database operations are defined in `operations.sql` and include:
 ## Usage
 
 You can use the provided SQL files to set up and manipulate an event management system database. The operations file contains examples of common and advanced database operations.
-
-## License
-
-This repository is licensed under the MIT License.
